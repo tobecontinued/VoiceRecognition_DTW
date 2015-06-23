@@ -223,7 +223,6 @@ float **WAVtoMFCCs(char *WavfileName,int *pLen)
 	float* WAVData,**f,**mfcc;
 	int i,n,frameLen,frameN,start,end;
 	int sampleRate;
-
 	fileHeader = openWAVFile(WavfileName);
 	if (!fileHeader)
 	{

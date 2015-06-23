@@ -53,7 +53,7 @@ int main()
 		min = FLT_MAX;
 		if (t == NULL)
 		{
-			fprintf(stderr, "error£º%s:%d\n", __FILE__, __LINE__);
+			fprintf(stderr, "error£º%s,%d\n", __FILE__, __LINE__);
 			exit(-1);
 		}
 		for (j = 0; j < 10; ++j)
@@ -66,7 +66,7 @@ int main()
 			T = MFCCfiletoMFCCs(nameBuff, &Tlen);
 			if (T == NULL)
 			{
-			//	fprintf(stderr, "error£º%s,%s\n", __FILE__, __LINE__);
+				fprintf(stderr, "error£º%s,%d\n", __FILE__, __LINE__);
 				exit(-1);
 			}
 
